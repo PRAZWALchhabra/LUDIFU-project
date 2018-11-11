@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Web App</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet">
+</head>
+
+  <body>
+    <div class="container">
+        {% block body %}
+        
+        {% endblock %}
+    </div>
+  </body>
+  <footer>
+    <script src="{{ url_for('static', filename='js/myscript.js') }}"></script>
+  </footer>
+</html>
